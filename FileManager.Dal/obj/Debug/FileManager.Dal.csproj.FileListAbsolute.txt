@@ -1,0 +1,15 @@
+D:\Rodion\FileManager\FileManager.Dal\obj\Debug\FileManager.Dal.csprojResolveAssemblyReference.cache
+D:\Rodion\FileManager\FileManager.Dal\bin\Debug\FileManager.Dal.dll.config
+D:\Rodion\FileManager\FileManager.Dal\bin\Debug\FileManager.Dal.dll
+D:\Rodion\FileManager\FileManager.Dal\bin\Debug\FileManager.Dal.pdb
+D:\Rodion\FileManager\FileManager.Dal\bin\Debug\EntityFramework.dll
+D:\Rodion\FileManager\FileManager.Dal\bin\Debug\EntityFramework.SqlServer.dll
+D:\Rodion\FileManager\FileManager.Dal\bin\Debug\FileManager.Data.dll
+D:\Rodion\FileManager\FileManager.Dal\bin\Debug\FileManager.Data.pdb
+D:\Rodion\FileManager\FileManager.Dal\bin\Debug\EntityFramework.xml
+D:\Rodion\FileManager\FileManager.Dal\bin\Debug\EntityFramework.SqlServer.xml
+D:\Rodion\FileManager\FileManager.Dal\obj\Debug\FileManager.Dal.dll
+D:\Rodion\FileManager\FileManager.Dal\obj\Debug\FileManager.Dal.pdb
+D:\Rodion\FileManager\FileManager.Dal\obj\Debug\FileManager.Dal.Migrations.fileContent.resources
+D:\Rodion\FileManager\FileManager.Dal\obj\Debug\FileManager.Dal.csproj.GenerateResource.Cache
+D:\Rodion\FileManager\FileManager.Dal\obj\Debug\FileManager.Dal.Migrations.commentsAndChanges.resources
