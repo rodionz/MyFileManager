@@ -5,15 +5,18 @@
 
 <!DOCTYPE html>
 
-<html ng-app="app">
+<html ng-app="fileManagerApp">
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
-    <script src="~/Scripts/AngularJs/angular.min.js"></script>
+    <script src="~/Scripts/AngularJs/angular.js"></script>
+    <script src="~/Scripts/AngularJs/angular-route.js"></script>
+
     <script src="~/Scripts/App/app.js"></script>
 </head>
 <body>
-    <div> 
+    <div ng-controller="mainController"> 
+        {{greeting}}
     </div>
 </body>
 </html>

@@ -1,13 +1,17 @@
-﻿(function () {
-    'use strict';
+﻿
 
-    angular.module('app', [
-        // Angular modules 
-        'ngRoute'
 
-        // Custom modules 
+var fileManagerApp = angular.module('fileManagerApp', ['ngRoute']);
 
-        // 3rd Party Modules
 
-    ]);
-})();
+fileManagerApp.controller("mainController", function ($scope)
+{
+
+    $scope.greeting = "It Works!";
+
+
+
+
+
+});
+

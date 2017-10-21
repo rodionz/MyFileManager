@@ -8,3 +8,13 @@ D:\Rodion\FileManager\FileManager.Data\bin\Debug\EntityFramework.SqlServer.xml
 D:\Rodion\FileManager\FileManager.Data\obj\Debug\FileManager.Data.csprojResolveAssemblyReference.cache
 D:\Rodion\FileManager\FileManager.Data\obj\Debug\FileManager.Data.dll
 D:\Rodion\FileManager\FileManager.Data\obj\Debug\FileManager.Data.pdb
+D:\Combix\MyFileManager\FileManager.Data\bin\Debug\FileManager.Data.dll.config
+D:\Combix\MyFileManager\FileManager.Data\bin\Debug\FileManager.Data.dll
+D:\Combix\MyFileManager\FileManager.Data\bin\Debug\FileManager.Data.pdb
+D:\Combix\MyFileManager\FileManager.Data\bin\Debug\EntityFramework.dll
+D:\Combix\MyFileManager\FileManager.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\Combix\MyFileManager\FileManager.Data\bin\Debug\EntityFramework.xml
+D:\Combix\MyFileManager\FileManager.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\Combix\MyFileManager\FileManager.Data\obj\Debug\FileManager.Data.csprojResolveAssemblyReference.cache
+D:\Combix\MyFileManager\FileManager.Data\obj\Debug\FileManager.Data.dll
+D:\Combix\MyFileManager\FileManager.Data\obj\Debug\FileManager.Data.pdb
