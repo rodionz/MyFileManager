@@ -12,7 +12,7 @@ namespace FileManager.Data
 
         public string FolderName { get; set; }
 
-        public virtual ICollection<File> Files { get; set; }
+        public  ICollection<File> Files { get; set; }
 
 
     }

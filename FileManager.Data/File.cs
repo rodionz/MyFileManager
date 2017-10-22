@@ -18,7 +18,7 @@ namespace FileManager.Data
 
         public DateTime CreationDate { get; set; }
 
-        public virtual ICollection<FileComment> FileComments { get; set; }
+        public  ICollection<FileComment> FileComments { get; set; }
 
         public int FolderId { get; set; }
 

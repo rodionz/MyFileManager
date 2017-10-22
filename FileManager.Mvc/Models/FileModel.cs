@@ -15,13 +15,13 @@ namespace FileManager.Mvc.Models
 
         public HttpPostedFileBase FileContent { get; set; }
 
-        public string Comment { get; set; }
+    
 
         public int FolderId { get; set; }
 
         #endregion
 
-        #region constructors
+        #region methods
 
         public FileModel() { }
 
@@ -29,8 +29,17 @@ namespace FileManager.Mvc.Models
         {
             this.FileId = domainFile.FileId;
             this.FileName = domainFile.FileName;
-            // TODO File Content
-        
+            this.FolderId = domainFile.FolderId;
+        }
+
+        public File ToDomain()
+        {
+            return new File
+            {
+                FileId = FileId,
+                FileName = FileName,
+                FolderId = FolderId
+            };
         }
 
         #endregion
