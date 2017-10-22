@@ -87,6 +87,24 @@ namespace FileManager.Logic
         }
 
 
+
+
+
+        public byte[] GetFileContent(int fileId)
+        {
+            using(var context = new FileManagerContext())
+            {
+                var content = (from c in context.Files
+                               where c.FileId == fileId
+                               select c.FileContent).FirstOrDefault();
+
+                return content;
+            }
+        }
+
+
+
+
         public static void CreateMessageWithAttachment(string server)
         {
             // Specify the file to be attached and sent. 
