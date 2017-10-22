@@ -28,3 +28,17 @@ D:\Combix\MyFileManager\FileManager.Logic\bin\Debug\EntityFramework.SqlServer.xm
 D:\Combix\MyFileManager\FileManager.Logic\obj\Debug\FileManager.Logic.csprojResolveAssemblyReference.cache
 D:\Combix\MyFileManager\FileManager.Logic\obj\Debug\FileManager.Logic.dll
 D:\Combix\MyFileManager\FileManager.Logic\obj\Debug\FileManager.Logic.pdb
+D:\Rodion\MyFileManager\FileManager.Logic\bin\Debug\FileManager.Logic.dll.config
+D:\Rodion\MyFileManager\FileManager.Logic\bin\Debug\FileManager.Logic.dll
+D:\Rodion\MyFileManager\FileManager.Logic\bin\Debug\FileManager.Logic.pdb
+D:\Rodion\MyFileManager\FileManager.Logic\bin\Debug\EntityFramework.dll
+D:\Rodion\MyFileManager\FileManager.Logic\bin\Debug\EntityFramework.SqlServer.dll
+D:\Rodion\MyFileManager\FileManager.Logic\bin\Debug\FileManager.Dal.dll
+D:\Rodion\MyFileManager\FileManager.Logic\bin\Debug\FileManager.Data.dll
+D:\Rodion\MyFileManager\FileManager.Logic\bin\Debug\FileManager.Dal.pdb
+D:\Rodion\MyFileManager\FileManager.Logic\bin\Debug\FileManager.Data.pdb
+D:\Rodion\MyFileManager\FileManager.Logic\bin\Debug\EntityFramework.xml
+D:\Rodion\MyFileManager\FileManager.Logic\bin\Debug\EntityFramework.SqlServer.xml
+D:\Rodion\MyFileManager\FileManager.Logic\obj\Debug\FileManager.Logic.csprojResolveAssemblyReference.cache
+D:\Rodion\MyFileManager\FileManager.Logic\obj\Debug\FileManager.Logic.dll
+D:\Rodion\MyFileManager\FileManager.Logic\obj\Debug\FileManager.Logic.pdb
