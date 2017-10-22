@@ -44,3 +44,4 @@ D:\Rodion\MyFileManager\FileManager.Dal\obj\Debug\FileManager.Dal.Migrations.com
 D:\Rodion\MyFileManager\FileManager.Dal\obj\Debug\FileManager.Dal.csproj.GenerateResource.Cache
 D:\Rodion\MyFileManager\FileManager.Dal\obj\Debug\FileManager.Dal.dll
 D:\Rodion\MyFileManager\FileManager.Dal\obj\Debug\FileManager.Dal.pdb
+D:\Rodion\MyFileManager\FileManager.Dal\obj\Debug\FileManager.Dal.Migrations.nonVirtual.resources

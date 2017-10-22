@@ -55,6 +55,10 @@
     <Compile Include="Migrations\201710191152274_commentsAndChanges.Designer.cs">
       <DependentUpon>201710191152274_commentsAndChanges.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710220620239_nonVirtual.cs" />
+    <Compile Include="Migrations\201710220620239_nonVirtual.Designer.cs">
+      <DependentUpon>201710220620239_nonVirtual.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -74,6 +78,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710191152274_commentsAndChanges.resx">
       <DependentUpon>201710191152274_commentsAndChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710220620239_nonVirtual.resx">
+      <DependentUpon>201710220620239_nonVirtual.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
