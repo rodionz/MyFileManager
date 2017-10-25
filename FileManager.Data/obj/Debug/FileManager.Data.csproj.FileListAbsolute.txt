@@ -28,3 +28,13 @@ D:\Rodion\MyFileManager\FileManager.Data\bin\Debug\EntityFramework.SqlServer.xml
 D:\Rodion\MyFileManager\FileManager.Data\obj\Debug\FileManager.Data.csprojResolveAssemblyReference.cache
 D:\Rodion\MyFileManager\FileManager.Data\obj\Debug\FileManager.Data.dll
 D:\Rodion\MyFileManager\FileManager.Data\obj\Debug\FileManager.Data.pdb
+C:\Users\User\Downloads\MyFileManager\FileManager.Data\bin\Debug\FileManager.Data.dll.config
+C:\Users\User\Downloads\MyFileManager\FileManager.Data\bin\Debug\FileManager.Data.dll
+C:\Users\User\Downloads\MyFileManager\FileManager.Data\bin\Debug\FileManager.Data.pdb
+C:\Users\User\Downloads\MyFileManager\FileManager.Data\bin\Debug\EntityFramework.dll
+C:\Users\User\Downloads\MyFileManager\FileManager.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Downloads\MyFileManager\FileManager.Data\bin\Debug\EntityFramework.xml
+C:\Users\User\Downloads\MyFileManager\FileManager.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Downloads\MyFileManager\FileManager.Data\obj\Debug\FileManager.Data.csprojResolveAssemblyReference.cache
+C:\Users\User\Downloads\MyFileManager\FileManager.Data\obj\Debug\FileManager.Data.dll
+C:\Users\User\Downloads\MyFileManager\FileManager.Data\obj\Debug\FileManager.Data.pdb
