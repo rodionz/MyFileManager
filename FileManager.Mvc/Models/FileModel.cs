@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Web;
 using FileManager.Data;
+using System.ComponentModel.DataAnnotations;
 
 namespace FileManager.Mvc.Models
 {
@@ -10,13 +8,10 @@ namespace FileManager.Mvc.Models
     {
         #region Fields
         public int FileId { get; set; }
-
+        [Required]
         public string FileName { get; set; }
-
-        public HttpPostedFileBase FileContent { get; set; }
-
-    
-
+        public string ContentType { get; set; }
+        public byte[] FileContent { get; set; }
         public int FolderId { get; set; }
 
         #endregion
@@ -29,19 +24,41 @@ namespace FileManager.Mvc.Models
         {
             this.FileId = domainFile.FileId;
             this.FileName = domainFile.FileName;
+            this.ContentType = domainFile.ContentType;
             this.FolderId = domainFile.FolderId;
         }
 
-        public File ToDomain()
+        public FileModel(File domainFile, bool bringContetn)
+        {
+            this.FileId = domainFile.FileId;
+            this.FileName = domainFile.FileName;
+            this.ContentType = domainFile.ContentType;
+            this.FolderId = domainFile.FolderId;
+            this.FileContent = domainFile.FileContent;
+        }
+
+        public File ToDomainWhithContent()
         {
             return new File
             {
                 FileId = FileId,
                 FileName = FileName,
-                FolderId = FolderId
+                ContentType = ContentType,
+                FolderId = FolderId,
+                FileContent = FileContent
             };
         }
 
+        public File ToDomainWhithoutContent()
+        {
+            return new File
+            {
+                FileId = FileId,
+                FileName = FileName,
+                ContentType = ContentType,
+                FolderId = FolderId        
+            };
+        }
         #endregion
     }
 }

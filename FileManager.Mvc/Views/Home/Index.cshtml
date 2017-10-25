@@ -1,22 +1,39 @@
 ﻿
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
 
-<html ng-app="fileManagerApp">
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-    <script src="~/Scripts/AngularJs/angular.js"></script>
-    <script src="~/Scripts/AngularJs/angular-route.js"></script>
 
-    <script src="~/Scripts/App/app.js"></script>
-</head>
-<body>
-    <div ng-controller="mainController"> 
-        {{greeting}}
+<main>
+    <div ng-controller="mainController">
+        <h2>Index</h2>
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="folder in folders">
+                <a ui-sref="singleFolderView({folderId : folder.FolderId, folderName : folder.FolderName})">{{folder.FolderName}}</a>
+                <span ng-click="deleteFolder(folder)">*Delete*</span>
+                <span ng-click="openFolderEditForm(folder)">*Rename*</span>
+            </li>
+        </ul>
+        <br />
+        <button class="btn btn-default" ng-click="openNewFolderForm()" id="newFolder">Create New Folder</button>
+
+   
+        <form ng-submit="createFolder()" ng-if="showNewFolderName">
+            <label>Enter Folder Name</label>
+            <input type="text" ng-model="folderName"/>
+            <input class="btn btn-default" type="submit" value="Submit" />
+        </form>
+        
+        <form ng-if="showFolderRenameForm ">
+            <label>Change Folder Name</label>
+            <input type="text" ng-model="folderName"/>
+            <input class="btn btn-default" ng-click=" renamefolder()" type="submit" value="Submit" />
+        </form>
+
     </div>
-</body>
-</html>
+
+    
+</main>
+
+   

@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FileManager.Data
 {
@@ -14,11 +11,15 @@ namespace FileManager.Data
 
         public string FilePath { get; set; }
 
+        public string ContentType { get; set; }
+
         public byte[] FileContent { get; set; }
 
-        public DateTime CreationDate { get; set; }
+        public DateTime? CreationDate { get; set; }
 
-        public  ICollection<FileComment> FileComments { get; set; }
+        public  ICollection<string> FileComments { get; set; }
+
+        public ICollection<FileNameChange> FileNameChanges { get; set; }
 
         public int FolderId { get; set; }
 

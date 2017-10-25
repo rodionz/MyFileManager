@@ -1,34 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Web.Mvc;
 using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using System.IO;
+using FileManager.Logic;
+using FileManager.Mvc.Models;
 
 namespace FileManager.Mvc.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
+        private readonly FoldersService _folderservice;
+        private readonly FilesService _fileservice;
+
+        public HomeController() 
+        {
+            _folderservice = new FoldersService();
+            _fileservice = new FilesService();
+        }
+
         public ActionResult Index()
         {
             return View();
         }
 
-        [HttpPost]
-        public ActionResult Upload(HttpPostedFileBase file)
+        public ActionResult GetAllFolders()
         {
-           string directory = @"D:\Rodion\Storage";
+            var folders = _folderservice.GetAllFolders().Select(f => new FolderModel(f));
 
-            //string directory = "~/App_Data/Storage";
-
-            if (file != null && file.ContentLength > 0)
-            {
-                var fileName = Path.GetFileName(file.FileName);
-                file.SaveAs(Path.Combine(directory, fileName));
-            }
-
-            return RedirectToAction("Index");
+            return Json(folders, JsonRequestBehavior.AllowGet);
         }
+
+      
     }
 }

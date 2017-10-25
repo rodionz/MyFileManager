@@ -59,6 +59,26 @@
     <Compile Include="Migrations\201710220620239_nonVirtual.Designer.cs">
       <DependentUpon>201710220620239_nonVirtual.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710230540470_someChanges.cs" />
+    <Compile Include="Migrations\201710230540470_someChanges.Designer.cs">
+      <DependentUpon>201710230540470_someChanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710230958114_id.cs" />
+    <Compile Include="Migrations\201710230958114_id.Designer.cs">
+      <DependentUpon>201710230958114_id.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710241228403_nullableDate.cs" />
+    <Compile Include="Migrations\201710241228403_nullableDate.Designer.cs">
+      <DependentUpon>201710241228403_nullableDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710251250075_fixed.cs" />
+    <Compile Include="Migrations\201710251250075_fixed.Designer.cs">
+      <DependentUpon>201710251250075_fixed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710251315414_Initial.cs" />
+    <Compile Include="Migrations\201710251315414_Initial.Designer.cs">
+      <DependentUpon>201710251315414_Initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -81,6 +101,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710220620239_nonVirtual.resx">
       <DependentUpon>201710220620239_nonVirtual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710230540470_someChanges.resx">
+      <DependentUpon>201710230540470_someChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710230958114_id.resx">
+      <DependentUpon>201710230958114_id.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710241228403_nullableDate.resx">
+      <DependentUpon>201710241228403_nullableDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710251250075_fixed.resx">
+      <DependentUpon>201710251250075_fixed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710251315414_Initial.resx">
+      <DependentUpon>201710251315414_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

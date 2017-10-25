@@ -45,3 +45,8 @@ D:\Rodion\MyFileManager\FileManager.Dal\obj\Debug\FileManager.Dal.csproj.Generat
 D:\Rodion\MyFileManager\FileManager.Dal\obj\Debug\FileManager.Dal.dll
 D:\Rodion\MyFileManager\FileManager.Dal\obj\Debug\FileManager.Dal.pdb
 D:\Rodion\MyFileManager\FileManager.Dal\obj\Debug\FileManager.Dal.Migrations.nonVirtual.resources
+D:\Rodion\MyFileManager\FileManager.Dal\obj\Debug\FileManager.Dal.Migrations.someChanges.resources
+D:\Rodion\MyFileManager\FileManager.Dal\obj\Debug\FileManager.Dal.Migrations.id.resources
+D:\Rodion\MyFileManager\FileManager.Dal\obj\Debug\FileManager.Dal.Migrations.nullableDate.resources
+D:\Rodion\MyFileManager\FileManager.Dal\obj\Debug\FileManager.Dal.Migrations._fixed.resources
+D:\Rodion\MyFileManager\FileManager.Dal\obj\Debug\FileManager.Dal.Migrations.Initial.resources

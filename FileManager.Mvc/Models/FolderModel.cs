@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using FileManager.Data;
+﻿using FileManager.Data;
+using System.ComponentModel.DataAnnotations;
 
 namespace FileManager.Mvc.Models
 {
@@ -10,9 +7,8 @@ namespace FileManager.Mvc.Models
     {
         public int FolderId { get; set; }
 
+        [Required]
         public string FolderName { get; set; }
-
-
 
         public FolderModel() { }
 

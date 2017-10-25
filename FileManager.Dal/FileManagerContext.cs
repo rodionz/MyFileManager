@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using FileManager.Data;
 
 namespace FileManager.Dal
@@ -14,8 +9,6 @@ namespace FileManager.Dal
 
         public virtual DbSet<Folder> Folders { get; set; }
 
-        public virtual DbSet<FileComment> FileComments { get; set; }
-
-        public virtual DbSet<FileChange> FileChanges { get; set; }
+        public virtual DbSet<FileNameChange> FileChanges { get; set; }
     }
 }

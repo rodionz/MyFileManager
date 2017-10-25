@@ -46,8 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FilesLogic.cs" />
-    <Compile Include="FoldersLogic.cs" />
+    <Compile Include="FilesService.cs" />
+    <Compile Include="FoldersService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

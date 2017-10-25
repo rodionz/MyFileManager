@@ -47,8 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="File.cs" />
-    <Compile Include="FileChange.cs" />
-    <Compile Include="FileComment.cs" />
+    <Compile Include="FileNameChange.cs" />
     <Compile Include="Folder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
