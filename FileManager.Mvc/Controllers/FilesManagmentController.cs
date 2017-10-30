@@ -91,14 +91,14 @@ namespace FileManager.Mvc.Controllers
             if (ModelState.IsValid)
             {
                 var messageAttachment = new FileModel(_fileservice.GetFileWhithContent(emailModel.FileId), true);
-                string from = "rodion@combix.co.il";
+                string from = "*****";
 
                 using(MailMessage mail = new MailMessage(from, emailModel.RecipientsEmail))
                 using (var stream = new MemoryStream(messageAttachment.FileContent))
                 {
                     mail.Subject = emailModel.Subject;                  
                     mail.Attachments.Add(new Attachment(stream, messageAttachment.FileName, messageAttachment.ContentType));
-                    NetworkCredential networkCredential = new NetworkCredential(from, "r321616351z");
+                    NetworkCredential networkCredential = new NetworkCredential(from, "******");
                     SmtpClient smtp = new SmtpClient();
                     smtp.Host = "smtp.gmail.com";
                     smtp.EnableSsl = true;               
