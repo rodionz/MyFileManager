@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{409D4C5B-E3BF-4E56-9BD5-01F8EEA89AC8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FileManager.Dal</RootNamespace>
+    <AssemblyName>FileManager.Dal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FileManagerContext.cs" />
+    <Compile Include="Migrations\201710190901054_fileContent.cs" />
+    <Compile Include="Migrations\201710190901054_fileContent.Designer.cs">
+      <DependentUpon>201710190901054_fileContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710191152274_commentsAndChanges.cs" />
+    <Compile Include="Migrations\201710191152274_commentsAndChanges.Designer.cs">
+      <DependentUpon>201710191152274_commentsAndChanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710220620239_nonVirtual.cs" />
+    <Compile Include="Migrations\201710220620239_nonVirtual.Designer.cs">
+      <DependentUpon>201710220620239_nonVirtual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710230540470_someChanges.cs" />
+    <Compile Include="Migrations\201710230540470_someChanges.Designer.cs">
+      <DependentUpon>201710230540470_someChanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710230958114_id.cs" />
+    <Compile Include="Migrations\201710230958114_id.Designer.cs">
+      <DependentUpon>201710230958114_id.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710241228403_nullableDate.cs" />
+    <Compile Include="Migrations\201710241228403_nullableDate.Designer.cs">
+      <DependentUpon>201710241228403_nullableDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710251250075_fixed.cs" />
+    <Compile Include="Migrations\201710251250075_fixed.Designer.cs">
+      <DependentUpon>201710251250075_fixed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710251315414_Initial.cs" />
+    <Compile Include="Migrations\201710251315414_Initial.Designer.cs">
+      <DependentUpon>201710251315414_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710260654003_changesTableRemoved.cs" />
+    <Compile Include="Migrations\201710260654003_changesTableRemoved.Designer.cs">
+      <DependentUpon>201710260654003_changesTableRemoved.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710260655484_fileNameChnagesisBack.cs" />
+    <Compile Include="Migrations\201710260655484_fileNameChnagesisBack.Designer.cs">
+      <DependentUpon>201710260655484_fileNameChnagesisBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710260837319_fileComments.cs" />
+    <Compile Include="Migrations\201710260837319_fileComments.Designer.cs">
+      <DependentUpon>201710260837319_fileComments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710261242250_fileNameLength.cs" />
+    <Compile Include="Migrations\201710261242250_fileNameLength.Designer.cs">
+      <DependentUpon>201710261242250_fileNameLength.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FileManager.Data\FileManager.Data.csproj">
+      <Project>{ce374a86-2570-4746-98fe-00aea962fdc1}</Project>
+      <Name>FileManager.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201710190901054_fileContent.resx">
+      <DependentUpon>201710190901054_fileContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710191152274_commentsAndChanges.resx">
+      <DependentUpon>201710191152274_commentsAndChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710220620239_nonVirtual.resx">
+      <DependentUpon>201710220620239_nonVirtual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710230540470_someChanges.resx">
+      <DependentUpon>201710230540470_someChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710230958114_id.resx">
+      <DependentUpon>201710230958114_id.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710241228403_nullableDate.resx">
+      <DependentUpon>201710241228403_nullableDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710251250075_fixed.resx">
+      <DependentUpon>201710251250075_fixed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710251315414_Initial.resx">
+      <DependentUpon>201710251315414_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710260654003_changesTableRemoved.resx">
+      <DependentUpon>201710260654003_changesTableRemoved.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710260655484_fileNameChnagesisBack.resx">
+      <DependentUpon>201710260655484_fileNameChnagesisBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710260837319_fileComments.resx">
+      <DependentUpon>201710260837319_fileComments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710261242250_fileNameLength.resx">
+      <DependentUpon>201710261242250_fileNameLength.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

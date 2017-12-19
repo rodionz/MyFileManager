@@ -1,0 +1,103 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.actionLink {
+    color:white;
+    font-weight: 300;
+}
+
+.liName {
+    font-size: 18px;
+    color:#0059b3;
+}
+
+.badge {
+    background-color: #3399ff;
+}
+
+.darkBlue {
+    color: #0059b3;
+}
+
+.navbar-default .navbar-nav {
+    color: white;
+}
+
+.navbar-default .navbar-brand{
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default{
+    background-color:#3399ff;
+}
+
+.form-control {
+   border-left:none;
+   border-right:none;
+   border-top:none;
+   border-bottom:1px solid #0059b3;
+   border-radius:0px;
+}
+
+.list-group-item{
+    border-left:none;
+    border-right:none;
+}
+
+li:hover{
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+
+.btn-upload {
+  position: relative;
+  overflow: hidden;
+}
+.btn-upload input {
+ 
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transform: translate(-300px, 0) scale(4);
+  -webkit-transform: translate(-300px, 0) scale(4);
+  -ms-transform: translate(-300px, 0) scale(4);
+  -o-transform: translate(-300px, 0) scale(4);
+  font-size: 23px;
+  direction: ltr;
+  cursor: pointer;
+}
+* html .btn-upload {
+  line-height: 24px;
+  margin: 1px -3px 0 0;
+}
+* + html .btn-upload {
+  padding: 2px 15px;
+  margin: 1px 0 0 0;
+}

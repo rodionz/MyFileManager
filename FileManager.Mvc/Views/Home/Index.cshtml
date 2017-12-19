@@ -1,0 +1,75 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<main>
+    <br />
+    <div ng-controller="mainController">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="list-group">
+                    <li href="#" class="list-group-item justify-content-between align-items-center" ng-repeat="folder in folders">
+                        <a class="liName" ui-sref="singleFolderView({folderId : folder.FolderId, folderName : folder.FolderName})">{{folder.FolderName}}</a>
+                        <span class="badge badge-primary badge-pill"><a class="actionLink" ng-click="deleteFolder(folder)" href="#">Delete</a></span>
+                        <span class="badge badge-primary badge-pill"><a class="actionLink" ng-click="setFolder(folder)" data-toggle="modal" href="#folderEditForm">Rename</a></span>
+                    </li>
+                </ul>
+                <br />
+                <br />
+                <!-- Colored FAB button -->
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored" data-toggle="modal" data-target="#newFolderForm">
+                    <i class="material-icons">add</i>
+                </button>
+                @*<button type="button" class="btn btn-default btn-lg darkBlue" data-toggle="modal" data-target="#newFolderForm">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+    </button>*@
+
+                <div id="newFolderForm" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title darkBlue">Enter New Folder Name</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-inline" ng-submit="createFolder(newName)">
+                                    <div class="form-group">
+                                        <input class="form-control"
+                                               type="text"
+                                               ng-model="newName" />
+                                    </div>
+                                    <button style="float : right" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" type="submit">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="folderEditForm" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Rename Folder</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-inline"
+                                      ng-submit="renameFolder()">
+                                    <div class="form-group">
+                                        <input type="text"
+                                               ng-model="folderModel.FolderName"
+                                               class="form-control" />
+                                    </div>
+                                    <button style="float : right" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" type="submit">Submit</button>
+                                </form>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+   

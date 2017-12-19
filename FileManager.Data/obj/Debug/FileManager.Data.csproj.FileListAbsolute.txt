@@ -1,0 +1,10 @@
+D:\Rodion\MyFileManager\FileManager.Data\bin\Debug\FileManager.Data.dll.config
+D:\Rodion\MyFileManager\FileManager.Data\bin\Debug\FileManager.Data.dll
+D:\Rodion\MyFileManager\FileManager.Data\bin\Debug\FileManager.Data.pdb
+D:\Rodion\MyFileManager\FileManager.Data\bin\Debug\EntityFramework.dll
+D:\Rodion\MyFileManager\FileManager.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\Rodion\MyFileManager\FileManager.Data\bin\Debug\EntityFramework.xml
+D:\Rodion\MyFileManager\FileManager.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\Rodion\MyFileManager\FileManager.Data\obj\Debug\FileManager.Data.csprojResolveAssemblyReference.cache
+D:\Rodion\MyFileManager\FileManager.Data\obj\Debug\FileManager.Data.dll
+D:\Rodion\MyFileManager\FileManager.Data\obj\Debug\FileManager.Data.pdb

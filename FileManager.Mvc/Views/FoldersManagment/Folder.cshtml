@@ -1,0 +1,124 @@
+﻿
+
+<div ng-controller="folderController">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="page-header">
+                <h3 class="darkBlue" ng-bind="::folder.name"></h3>
+            </div>
+            <br />
+            <ul class="list-group">
+                <li class="list-group-item justify-content-between align-items-center" ng-repeat="file in files">
+                    <a class="liName" href="#" ng-click="downloadFile(file)" target="_blank">{{file.FileName}}</a>
+                    <span class="badge badge-primary badge-pill"><a class="actionLink" ng-click="emailForm(file)" data-toggle="modal" href="#emailForm">Send By Email</a></span>
+                    <span class="badge badge-primary badge-pill"><a class="actionLink" ng-click="FileRenameForm(file)" data-toggle="modal" href="#filerenameForm">Rename File</a></span>
+                    <span class="badge badge-primary badge-pill"><a class="actionLink" ng-click="showComments(file)" data-toggle="modal" href="#folderComments">Show Comments</a></span>
+                    <span class="badge badge-primary badge-pill"><a class="actionLink" ng-click="showHistory(file)" data-toggle="modal" href="#folderNamesHistory">View History</a></span>
+                    <br />
+                </li>
+            </ul>
+            <br />
+            <label ng-click="actionResult = ''">{{actionResult}}</label>
+            <br />
+
+            <div id="emailForm" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Rename file</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-inline"
+                                  ng-submit="sendMail(emailModel.RecipientsEmail)">
+                                <div class="form-group">
+                                    <label>Enter your Email</label>
+                                    <input class="form-control"
+                                           type="email"
+                                           ng-model="emailModel.RecipientsEmail" />
+                                </div>
+                                <input class="btn btn-default" type="submit" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="filerenameForm" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Rename file</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-inline"
+                                  ng-submit="renameFile(file.FileName)">
+                                <div class="form-group">
+                                    <label>ChangeFileName</label>
+                                    <input class="form-control"
+                                           type="text"
+                                           ng-model="file.FileName" />
+                                </div>
+                                <input class="btn btn-default" type="submit" value="Submit" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="folderComments" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">File comments</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-inline"
+                                  ng-submit="AddCommetToFile(newComment)">
+                                <div class="form-group">
+                                    <label>{{noComments}}</label>
+                                    <ul class="list-group">
+                                        <li class="list-group-item" ng-repeat="comment in file.FileComments">{{comment.CommentText}}</li>
+                                    </ul>
+                                    <input class="form-control" type="text" ng-model="newComment" />
+                                    <input class="btn btn-default" type="submit" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="folderNamesHistory" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">History of Name changes</h4>
+                        </div>
+                        <div class="modal-body">
+                            <label>{{noHistory}}</label>
+                            <ul class="list-group">
+                                <li class="list-group-item" ng-repeat="change in file.FileNameChanges">Renamed: from {{change.OldName}} to {{change.NewName}} at {{change.Date}}</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <button class="btn btn-primary btn-upload"
+                    upload-button
+                    url="/FilesManagment/UploadFile?{{folder.folderId}}"
+                    on-complete="onComplete(response)">Upload</button>
+        </div>
+    </div>
+</div>
+
+
